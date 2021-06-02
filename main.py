@@ -38,13 +38,13 @@ label3.image = images
 #packing image label to our main window
 label3.pack(expand=True)
 
-
+##Dice roller function
 def dice_roller():
     images = ImageTk.PhotoImage(Image.open(random.choice(dice)))
     label3.configure(image=images)
     label3.image = images
 
-
+#Creating button
 button = tkinter.Button(mainwindow, text='ROLL', fg='red', command=dice_roller)
 button.pack(expand=True)
 
